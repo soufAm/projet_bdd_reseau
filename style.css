@@ -1,0 +1,260 @@
+/* BODY */
+body {
+  margin: 0;
+}
+
+.bg_filter {
+  background-color: rgba(255, 255, 255, 0.623);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  display: flex;
+  flex-direction: row;
+}
+
+#spin {
+  color: rgb(14, 95, 14);
+}
+
+#spin:after {
+  content: "starts";
+  animation: spin 6s linear infinite;
+}
+@keyframes spin {
+  0% { content:"starts"; }
+  40% { content: "goes"; }
+  70% { content: "ends"; }
+}
+
+.titre {
+    font-family: 'Amatic SC', cursive;
+    color: rgb(44, 28, 28);
+
+
+  font-size: 120px;
+  position: absolute;
+  top: 15%;
+}
+
+.bloc2_body {
+  position: absolute;
+  top: 16%;
+  right: 8%;
+  width: 50%;
+}
+
+.bloc2_body h2 {
+  top: 15%;
+  padding-left: 200px;
+  font-size: 140px;
+}
+
+.img_titre {
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    top: 30%;
+    margin-left: 16%;
+  }
+  
+  .img_titre img {
+    max-height: 400px;
+}
+
+/* HEADER */
+
+header {
+  background-color: rgba(104, 74, 74, 0.65);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 84px;
+  overflow: hidden;
+}
+
+.bloc_img_header{
+  margin-top: 11px;
+  margin-left: 50px;
+}
+
+.img_header {
+  max-width: 320px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  height: 100%;
+  margin: 0;
+
+}
+
+nav ul a {
+  text-decoration: none;
+  list-style-type: none;
+  height: 100%;
+  width: 100%;
+  padding-top: 20px;
+}
+
+nav ul a:hover{
+  transition: 0.8s;
+  background-color:rgb(153, 139, 139);
+}
+
+nav ul a li {
+  width: 180px;
+  height: 100%;
+  color: white;
+  text-align: center;
+}
+
+/* BODY */
+#video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
+  transition: 0s opacity;
+}
+
+/* FOOTER */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 240px;
+}
+
+#footer_1 {
+    background: linear-gradient(180deg, rgba(211,204,204,1) 52%, rgba(153,153,153,1) 100%);
+    color: white;
+    text-align: center;
+    height: 85%;
+}
+
+#section_btn_nav {
+  display: flex;
+  padding-top: 20px;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* 
+========================
+      BUTTON THREE
+========================
+*/
+
+.btn {
+  line-height: 50px;
+  height: 70px;
+  text-align: center;
+  width: 250px;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.btn-three {
+  transition: all 0.5s;
+  position: relative;
+  color: #474747;
+  font-family: 'Oswald', sans-serif;
+  font-size: 25px;
+}
+.btn-three::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(14, 95, 14, 0.657);
+  transition: all 0.3s;
+  border-radius: 8px;
+}
+
+.btn-three:hover::before {
+  opacity: 0;
+  transform: scale(0.5, 0.5);
+}
+
+.btn-three::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border: 1px solid #474747b6;
+  transform: scale(1.2, 1.2);
+}
+.btn-three:hover::after {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+
+.btn-three:hover {
+  color: #474747b6;
+}
+
+#section_btn_social {
+  margin-left: 350px;
+  margin-right: 350px;
+}
+
+#section_btn_social ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  font-size: 50px;
+  margin: 0;
+}
+
+.container_line {
+  margin-left: 180px;
+  margin-right: 180px;
+}
+
+.line {
+  width: 100%;
+  border: 2px solid #474747;
+}
+
+#footer_2 {
+  background-color: black;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  height: 15%;
+  font-family: 'Roboto', sans-serif;
+}
+
+#footer_2 p {
+  margin: 0;
+  padding-top: 8px;
+}
+
+.logo_footer {
+  color: #474747;
+}
