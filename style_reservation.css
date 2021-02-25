@@ -1,0 +1,115 @@
+nav ul a:hover{
+    background-color:rgba(126, 104, 104, 0.835);
+}
+
+body{
+    overflow: hidden;
+    /* background: linear-gradient(360deg,  rgba(104, 74, 74, 0.582) 0%, white 30%); */
+    height: 100vh;
+}
+
+.titre_reservation{
+    position: relative;
+    bottom: 52px;
+    left: 35%;
+    background-color: white;
+    width: 450px;
+    font-size: 90px;
+    text-align: center;
+    font-family: "Amatic SC", cursive;
+    z-index: 0;
+    margin: 0;
+}
+
+.bloc_interne {
+    display: flex;
+    flex-direction: row;
+}
+
+.bloc_reservation{
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    border: 3px solid black;
+    height: 850px;
+    background-color: white;
+    border-radius: 10px;
+    background: linear-gradient(360deg,  rgba(104, 74, 74, 0.335) 0%, white 60%);
+}
+
+.table_reservation{
+    width: 40%;
+    height: 600px;
+    padding: 60px 60px 60px 60px;
+    margin: -30px 60px 0px 60px;
+    border: 3px solid black;
+    background: linear-gradient(360deg,  rgba(104, 74, 74, 0.335) 0%, white 60%);
+}
+
+.partie_reservation{
+    width: 40%;
+    border: 3px solid black;
+    height: 300px;
+}
+
+.fa-chair{
+    font-size: 90px;
+    margin: 20px;
+    color: rgb(3, 122, 3);
+    cursor: pointer;
+}
+
+.fa-chair:hover {
+    color: rgb(3, 77, 3);
+}
+
+.table p {
+    font-size: 20px;
+    margin: 0px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.line_table{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.legende{
+    width: 630px;
+    border: 3px solid black;
+    margin-top: -30px;
+    font-size: 26px;
+    padding: 0px 50px 50px 50px;
+    font-family: "Poppins", sans-serif;
+}
+
+#table_reserve{
+    font-size: 59px;
+    color: rgb(207, 11, 11);
+}
+
+#table_dispo{
+    font-size: 59px;
+    
+}
+
+.legende div{
+    display: flex;
+    flex-direction: row;
+}
+
+.line{
+    margin-top: -15px;
+}
+
+.div_reservation{
+    margin-top: 20px;
+    height: 320px;
+    border: 3px solid
+}
+
+.table_reservation{
+    background-color: white;
+}
